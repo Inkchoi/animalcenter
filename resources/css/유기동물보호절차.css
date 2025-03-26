@@ -1,0 +1,16 @@
+.동물보호센터소개{
+    width: 1800px;
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+
+.동물보호센터소개 > p{
+    color: rgb(197, 15, 15);
+    font-weight: bold;
+    font-size: 16px;
+}

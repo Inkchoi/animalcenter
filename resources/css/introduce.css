@@ -1,0 +1,172 @@
+.동물보호센터소개전체{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bar{
+    width: 460px;
+    height: 600px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.bar > p:nth-child(1){
+    /* 초록색 동물보호센터 */
+    color: #0f8563;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 30px 5px;
+}
+
+.nonselect{
+    margin-bottom: 25px;
+    padding-left: 5px;
+    padding-right: 10px;
+}
+
+.nonselect > a{
+    text-decoration: none;
+    font-size: 22px;
+    color: grey;
+}
+
+.nonselect:hover{
+    background-color: #0f8563;
+    font-size: 22px;
+    color: white;
+    padding: 10px;
+}
+
+.nonselect > a:hover{
+    color: white;
+}
+
+.동물보호센터소개{
+    flex-grow: 1;
+}
+
+.동물보호센터소개 > h2{
+    padding: 20px;
+    border-bottom: 1px solid lightgrey;
+}
+
+.topexpla{
+    border: 2px dotted lightgrey;
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: grey;
+    border-radius: 9px;
+}
+
+.topexpla > img{
+    width: 20px;
+}
+
+.building > img{
+    width: 100%;
+    margin: 40px 0;
+}
+
+.층{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.층 > div:nth-child(1){
+    border-top: 1px dotted rgb(119, 116, 116);
+    font-weight: bold;
+    font-size: 17px;
+    width: 10%;
+    padding-left: 25px;
+    padding-top: 16px;
+}
+
+.층 > div:nth-child(2){
+    border-top: 1px dotted lightgrey;
+    color: rgb(97, 96, 96);
+    font-weight: bold;
+    font-size: 17px;
+    width: 90%;
+    padding-left: 25px;
+    padding-top: 16px;
+}
+
+.holiday {
+    display: flex;
+    width: 100%;
+}
+
+.holiday > div:nth-child(1){
+    width: 10%;
+    border-bottom: 1px dotted rgb(119, 116, 116);
+    padding-left: 25px;
+}
+
+.holiday > div:nth-child(2){
+    width: 90%;
+    border-bottom: 1px dotted lightgrey;
+    color: grey;
+    font-size: 14px;
+    padding-bottom: 16px;
+}
+
+.barpieChart{
+    display: flex;
+    justify-content: space-between;
+}
+
+.barChart{
+    width: 100%;
+}
+
+.pieChart{
+    width: 100%;
+}
+
+.lineChart{
+    width: 50%;
+}
+
+.green-filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+}
+
+.green-filter > div{
+    width: 150px;
+    height: 50px;
+    border: 1px solid lightgrey;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.green-filter > div:hover{
+    background-color: #0f8563;
+    color: white;
+}
+
+.grey-filter{
+    width: 100%;
+    height: 300px;
+    background-color: lightgrey;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.select{
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+}
+
+

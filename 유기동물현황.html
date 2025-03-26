@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유기동물 현황</title>
+
+    <!-- 웹주소를 통해 chart.js 라이브러리 불러오기기 -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/x2js/1.2.0/xml2json.min.js"></script>
+
+    <!-- 공통 CSS 불러놓기 -->
+    <link rel="stylesheet" href="./resources/css/mystyle.css">
+
+    <link rel="stylesheet" href="./resources/css/introduce.css">
+
+    <link rel="stylesheet" href="./resources/css/오시는길.css">
+
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <nav class="navigation">
+            <a href="./index.html">
+                <img class="logo" src="./resources/img/로고.png">
+            </a>
+
+            <div class="menu-box">
+                <div class="menu">
+                    <a class="menu-title" href="./introduce.html">동물 보호 센터</a>
+                    <div class="dropdown">
+                        <a class="dropdown-item" href="./introduce.html">동물보호센터 소개</a>
+                        <a class="dropdown-item" href="./유기동물보호절차.html">유기동물 보호절차</a>
+                        <a class="dropdown-item" href="./오시는길.html">오시는 길</a>
+                    </div>
+                </div>
+                <div class="menu" href="./introduce.html">
+                    <a class="menu-title" href="./유기동물현황.html">동물보호 정보</a>
+                    <div class="dropdown">
+                        <a class="dropdown-item" href="./유기동물현황.html">유기동물 현황</a>
+                        <a class="dropdown-item" href="./유기동물보호정보.html">유기동물 보호 정보</a>
+                        <a class="dropdown-item" href="./입양절차.html">입양절차</a>
+                    </div>
+                </div>
+                <div class="menu">
+                    <a class="menu-title" href="./반려생활길잡이.html">반려생활 길잡이</a>
+                    <div class="dropdown">
+                        <a class="dropdown-item" href="./반려생활길잡이.html">반려생활 길잡이</a>
+                        <a class="dropdown-item" href="./반려동물출입식당.html">반려동물 출입 식당</a>
+                        <a class="dropdown-item" href="./FAQ.html">자주묻는 질문</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="banner">
+            <img src="./resources/img/배너.png" alt="">
+        </section>
+
+        <div class="동물보호센터소개전체">
+            <div class="bar">
+                <p>동물보호센터</p>
+                <p class="nonselect"><a href="./유기동물현황.html">유기동물 현황</a></p>
+                <p class="nonselect"><a href="./유기동물보호정보.html">유기동물 보호 정보</a></p>
+                <p class="nonselect"><a href="./입양절차.html">입양절차</a></p>
+            </div>
+
+            <div class="동물보호센터소개">
+                <h2>유기동물 현황</h2>
+
+                <div class="barpieChart">
+                    <div>
+                        <!-- 바 그래프가 그려질 공간 -->
+                        <canvas id="barChart"></canvas>
+                    </div>
+
+                    <div>
+                        <!-- 파이 그래프가 그려질 공간 -->
+                        <canvas id="pieChart"></canvas>
+                    </div>
+                </div>
+
+
+                <div>
+                    <!-- 선 그래프가 그려질 공간 -->
+                    <canvas id="lineChart"></canvas>
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <span>개인정보처리방침</span>
+        <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+        <span>영상정보처리기기운영·관리방침</span>
+        <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+        <span>누리집 개선의견</span>
+        <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+        <span>오시는길</span>
+
+        <div class="address">
+            <p>(34001) 대전광역시 유성구 금고길 7(금고동) 대전반려동물공원</p>
+            <p>(34001) 대전광역시 유성구 금남구즉로 1234(금고동) 대전동물보호센터 / 대표전화 (042) 042-270-7239 / 팩스번호 (042) 042-270-7224</p>
+            <p>COPYRIGHT 2023 (c) DAEJEON METROPOLITAN CITY.ALLRIGHTSRESERVED.</p>
+        </div>
+    </footer>
+
+    <script src="./resources/js/introduce.js"></script>
+
+    <!-- 공통 JS 불러놓기 -->
+    <!-- <script src="./resources/js/common.js"></script>
+    <script src="./resources/js/index.js"></script> -->
+
+</body>
+
+</html>

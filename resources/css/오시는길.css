@@ -1,0 +1,58 @@
+.동물보호센터소개{
+    width: 1800px;
+}
+
+.층 > div:nth-child(1){
+    border-top: 1px dotted rgb(119, 116, 116);
+    font-weight: bold;
+    font-size: 17px;
+    width: 15%;
+    padding-left: 25px;
+    padding-top: 16px;
+}
+
+.층 > div:nth-child(2){
+    border-top: 1px dotted lightgrey;
+    color: rgb(126, 124, 124);
+    font-weight: bold;
+    font-size: 17px;
+    width: 85%;
+    padding-left: 25px;
+    padding-top: 16px;
+}
+
+.holiday2 {
+    display: flex;
+    width: 100%;
+}
+
+.holiday2 > div:nth-child(1){
+    width: 15%;
+    padding-left: 25px;
+}
+
+.holiday2 > div:nth-child(2){
+    width: 85%;
+    color: rgb(126, 124, 124);
+    font-weight: bold;
+    font-size: 17px;
+    padding-bottom: 16px;
+}
+
+.last1{
+    border-bottom: 1px dotted rgb(119, 116, 116);
+    padding-bottom: 16px;
+}
+
+.last2{
+    border-bottom: 1px dotted lightgrey;
+    padding-bottom: 16px;
+}
+
+.map{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+}
