@@ -1,7 +1,7 @@
 // index.html 에서만 적용할 자바스크립트 코드 작성 
 const xhr3 = new XMLHttpRequest();
 
-const url = 'http://apis.data.go.kr/6300000/animalDaejeonService/animalDaejeonList'; /*URL*/
+const url = 'https://apis.data.go.kr/6300000/animalDaejeonService/animalDaejeonList'; /*URL*/
 let queryParams = '?' + encodeURIComponent('serviceKey') + '=' + 'L1PuA8lp4JRg3jEO1%2FeOgkPWdYGottpwLv%2BCXY%2BYsVCnYuBp6fqSs4bgpKc38HN6Pj96vzVPaRkIb%2BtblnYISg%3D%3D';
 queryParams += '&' + encodeURIComponent('pageNo') + '=' + encodeURIComponent('1'); /**/
 queryParams += '&' + encodeURIComponent('numOfRows') + '=' + encodeURIComponent('5'); /**/

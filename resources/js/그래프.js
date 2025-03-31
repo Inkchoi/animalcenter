@@ -4,7 +4,7 @@ const xhr = new XMLHttpRequest();
 //const url = "https://daejeon.go.kr/ani/AniContentsHtmlView.do?menuSeq=111";
 const serviceKey = 'L1PuA8lp4JRg3jEO1%2FeOgkPWdYGottpwLv%2BCXY%2BYsVCnYuBp6fqSs4bgpKc38HN6Pj96vzVPaRkIb%2BtblnYISg%3D%3D';
 const numberOfRows = 100;
-let url = `http://apis.data.go.kr/6300000/animalDaejeonService/animalDaejeonList?serviceKey=${serviceKey}&numOfRows=${10000}`;
+let url = `https://apis.data.go.kr/6300000/animalDaejeonService/animalDaejeonList?serviceKey=${serviceKey}&numOfRows=${10000}`;
 
 //url += '&' + encodeURIComponent('pageNo') + '=' + encodeURIComponent('1'); /**/
 //url += `${url}&${encodeURIComponent('pageNo')}=${encodeURIComponent('1')}`;

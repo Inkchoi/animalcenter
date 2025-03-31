@@ -11,7 +11,7 @@ document.getElementById("button").addEventListener("click", () => {
     let gu = document.getElementById("gu").value;
     let gender = document.getElementById("gender").value;
     let searchKeyword = document.getElementById("searchKeyword").value;
-    let url = `http://apis.data.go.kr/6300000/animalDaejeonService/animalDaejeonList?serviceKey=${serviceKey}&pageNo=1&numOfRows=9&searchCondition3=${status}&searchCondition=${sort}&searchCondition2=${gu}&gubun=${gender}&searchKeyword=${searchKeyword}`;
+    let url = `https://apis.data.go.kr/6300000/animalDaejeonService/animalDaejeonList?serviceKey=${serviceKey}&pageNo=1&numOfRows=9&searchCondition3=${status}&searchCondition=${sort}&searchCondition2=${gu}&gubun=${gender}&searchKeyword=${searchKeyword}`;
 
 
     xhr.open('GET', url);
@@ -130,7 +130,7 @@ function sendAjax() {
 
     let query = `?ServiceKey=${serviceKey}&numOfRows=${itemCountPerPage}&pageNo=${currentPage}&type=json`;
 
-    let url = `http://apis.data.go.kr/6300000/animalDaejeonService/animalDaejeonList?serviceKey=${serviceKey}&pageNo=1&numOfRows=9&searchCondition3=${status}&searchCondition=${sort}&searchCondition2=${gu}&gubun=${gender}&searchKeyword=${searchKeyword}`;
+    let url = `https://apis.data.go.kr/6300000/animalDaejeonService/animalDaejeonList?serviceKey=${serviceKey}&pageNo=1&numOfRows=9&searchCondition3=${status}&searchCondition=${sort}&searchCondition2=${gu}&gubun=${gender}&searchKeyword=${searchKeyword}`;
 
 
     //검색어가 입력되어있다면 요청 파라미터에 담음
