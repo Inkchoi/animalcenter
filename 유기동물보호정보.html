@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>유기동물 현황</title>
+    <title>유기동물 보호 정보</title>
 
     <!-- 웹주소를 통해 chart.js 라이브러리 불러오기기 -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -15,7 +15,7 @@
 
     <link rel="stylesheet" href="./resources/css/introduce.css">
 
-    <link rel="stylesheet" href="./resources/css/오시는길.css">
+    <link rel="stylesheet" href="./resources/css/유기동물보호정보.css">
 
 
 
@@ -81,47 +81,92 @@
                 </div>
 
                 <div class="grey-filter">
-                    <span style="font-size: 18px; font-weight: bold;">종류 <select name="종류" id="sort" class="select">
-                        <option value="">선택하세요</option>
-                        <option value="">개</option>
-                        <option value="">고양이</option>
-                        <option value="">기타동물</option>
-                    </select>
+                    <div class="grey-filter1">
+                        <div class="select-text">
+                            <span style="font-size: 18px; font-weight: bold;">종류</span>
+                            <select name="종류" id="sort" class="select">
+                                <option value="">선택하세요</option>
+                                <option value="1">개</option>
+                                <option value="2">고양이</option>
+                                <option value="3">기타동물</option>
+                            </select>
+                        </div>
 
-                    <span style="font-size: 18px; font-weight: bold;">상태 <select name="상태" id="status" class="select">
-                        <option value="">선택하세요</option>
-                        <option value="">공고중</option>
-                        <option value="">입양가능</option>
-                        <option value="">입양예정</option>
-                        <option value="">입양불가</option>
-                        <option value="">임시보호</option>
-                        <option value="">주민참여</option>
-                        <option value="">입원중</option>
-                    </select>
+                        <div class="select-text">
+                            <span style="font-size: 18px; font-weight: bold;">상태</span>
+                            <select name="상태" id="status" class="select">
+                                <option value="">선택하세요</option>
+                                <option value="1">공고중</option>
+                                <option value="2">입양가능</option>
+                                <option value="3">입양예정</option>
+                                <option value="4">입양불가</option>
+                                <option value="5">임시보호</option>
+                                <option value="6">주민참여</option>
+                                <option value="7">입원중</option>
+                            </select>
+                        </div>
 
-                    <span style="font-size: 18px; font-weight: bold;">지역 <select name="지역" id="gu" class="select">
-                        <option value="">선택하세요</option>
-                        <option value="">서구</option>
-                        <option value="">중구</option>
-                        <option value="">동구</option>
-                        <option value="">대덕구</option>
-                        <option value="">유성구</option>
-                    </select>
+                        <div class="select-text">
+                            <span style="font-size: 18px; font-weight: bold;">지역</span>
+                            <select name="지역" id="gu" class="select">
+                                <option value="">선택하세요</option>
+                                <option value="1">동구</option>
+                                <option value="2">중구</option>
+                                <option value="3">서구</option>
+                                <option value="4">유성구</option>
+                                <option value="5">대덕구</option>
+                            </select>
+                        </div>
 
-                    <span style="font-size: 18px; font-weight: bold;">성별 <select name="성별" id="gender" class="select">
-                        <option value="">--전체--</option>
-                        <option value="">암컷</option>
-                        <option value="">수컷</option>
-                        <option value="">중성화 암컷</option>
-                        <option value="">중성화 수컷</option>
-                        <option value="">미상</option>
-                    </select>
+                        <div class="select-text">
+                            <span style="font-size: 18px; font-weight: bold;">성별</span>
+                            <select name="성별" id="gender" class="select">
+                                <option value="">--전체--</option>
+                                <option value="1">암컷</option>
+                                <option value="2">수컷</option>
+                            </select>
+                        </div>
+                    </div>
 
+                    <div class="grey-filter2">
+                        <select name="품종" class="select">
+                            <option value="">--전체--</option>
+                            <option value="">품종</option>
+                            <option value="">기타사항</option>
+                            <option value="">관리번호</option>
+                            <option value="">공고번호</option>
+                            <option value="">성명</option>
+                            <option value="">동물등록번호</option>
+                            <option value="">담당자성명</option>
+                            <option value="">보호실</option>
+                        </select>
+                        <input type="text" id="searchKeyword">
+                        <button id="button">검색</button>
+                    </div>
+                </div>
+
+                <div class="card-box">
 
                 </div>
 
+                <div class="paging-box">
+                    <a href="javascript:goFirst()">&lt;&lt;</a>
+                    <a href="javascript:previous()">&lt;</a>
+                    <a href="#" class="active">1</a>
+                    <!-- 클릭시 자바 ㅅ ㅡ크립트 함수 실행  -->
+                    <a href="javascript:goPage(2)">2</a>
+                    <a href="javascript:goPage(3)">3</a>
+                    <a href="javascript:goPage(4)">4</a>
+                    <a href="javascript:goPage(5)">5</a>
+                    <a href="javascript:goPage(6)">6</a>
+                    <a href="javascript:goPage(7)">7</a>
+                    <a href="javascript:goPage(8)">8</a>
+                    <a href="javascript:goPage(9)">9</a>
+                    <a href="javascript:goPage(10)">10</a>
+                    <a href="javascript:next()">&gt;</a>
+                    <a href="javascript:goLast()" title="마지막 페이지">&gt;&gt;</a>
 
-
+                </div>
 
 
             </div>
@@ -146,11 +191,7 @@
         </div>
     </footer>
 
-    <script src="./resources/js/introduce.js"></script>
-
-    <!-- 공통 JS 불러놓기 -->
-    <!-- <script src="./resources/js/common.js"></script>
-    <script src="./resources/js/index.js"></script> -->
+    <script src="./resources/js/유기동물보호정보.js"></script>
 
 </body>
 

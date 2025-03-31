@@ -1,16 +1,16 @@
-.동물보호센터소개전체{
+.동물보호센터소개전체 {
     display: flex;
     justify-content: space-between;
 }
 
-.bar{
-    width: 460px;
+.bar {
+    width: 450px;
     height: 600px;
     padding-right: 10px;
     box-sizing: border-box;
 }
 
-.bar > p:nth-child(1){
+.bar>p:nth-child(1) {
     /* 초록색 동물보호센터 */
     color: #0f8563;
     font-size: 30px;
@@ -18,41 +18,41 @@
     padding: 30px 5px;
 }
 
-.nonselect{
+.nonselect {
     margin-bottom: 25px;
     padding-left: 5px;
     padding-right: 10px;
 }
 
-.nonselect > a{
+.nonselect>a {
     text-decoration: none;
     font-size: 22px;
     color: grey;
 }
 
-.nonselect:hover{
+.nonselect:hover {
     background-color: #0f8563;
     font-size: 22px;
     color: white;
     padding: 10px;
 }
 
-.nonselect > a:hover{
+.nonselect>a:hover {
     color: white;
 }
 
-.동물보호센터소개{
-    flex-grow: 1;
+.동물보호센터소개 {
+    width: 1800px;
 }
 
-.동물보호센터소개 > h2{
+.동물보호센터소개>h2 {
     padding: 20px;
     border-bottom: 1px solid lightgrey;
 }
 
-.topexpla{
+.topexpla {
     border: 2px dotted lightgrey;
-    margin-top: 20px;
+    margin: 25px 0;
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -61,23 +61,23 @@
     border-radius: 9px;
 }
 
-.topexpla > img{
+.topexpla>img {
+    /* 느낌표 */
     width: 20px;
 }
 
-.building > img{
+.building>img {
     width: 100%;
-    margin: 40px 0;
 }
 
-.층{
+.층 {
     height: 60px;
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.층 > div:nth-child(1){
+.층>div:nth-child(1) {
     border-top: 1px dotted rgb(119, 116, 116);
     font-weight: bold;
     font-size: 17px;
@@ -86,7 +86,7 @@
     padding-top: 16px;
 }
 
-.층 > div:nth-child(2){
+.층>div:nth-child(2) {
     border-top: 1px dotted lightgrey;
     color: rgb(97, 96, 96);
     font-weight: bold;
@@ -101,13 +101,13 @@
     width: 100%;
 }
 
-.holiday > div:nth-child(1){
+.holiday>div:nth-child(1) {
     width: 10%;
     border-bottom: 1px dotted rgb(119, 116, 116);
     padding-left: 25px;
 }
 
-.holiday > div:nth-child(2){
+.holiday>div:nth-child(2) {
     width: 90%;
     border-bottom: 1px dotted lightgrey;
     color: grey;
@@ -115,31 +115,31 @@
     padding-bottom: 16px;
 }
 
-.barpieChart{
+.barpieChart {
     display: flex;
     justify-content: space-between;
 }
 
-.barChart{
-    width: 100%;
+#barChart {
+    width: 200%;
 }
 
-.pieChart{
-    width: 100%;
+#pieChart {
+    width: 200%;
 }
 
-.lineChart{
+#lineChart {
     width: 50%;
 }
 
-.green-filter{
+.green-filter {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 25px;
+    margin: 25px 0;
 }
 
-.green-filter > div{
+.green-filter>div {
     width: 150px;
     height: 50px;
     border: 1px solid lightgrey;
@@ -150,23 +150,199 @@
     box-sizing: border-box;
 }
 
-.green-filter > div:hover{
+.green-filter>div:hover {
     background-color: #0f8563;
     color: white;
+    cursor: pointer;
 }
 
 .grey-filter{
     width: 100%;
-    height: 300px;
-    background-color: lightgrey;
+    height: 120px;
+    background-color: rgb(231, 228, 228);
     border-radius: 10px;
+    padding-top: 25px;
+}
+
+.grey-filter1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.select {
+    width: 110px;
+    height: 40px;
+    font-size: 16px;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.select:nth-child(4){
+    margin: 0;
+}
+
+.select:nth-child(5){
+    margin: 0;
+}
+
+.grey-filter2>button{
+    /* 차콜색 검색 버튼 */
+    background-color: rgb(59, 57, 57);
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 7px 13px;
+    cursor: pointer;
+}
+
+.grey-filter2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.grey-filter2 > input{
+    height: 36px;
+    margin-right: 5px;
+}
+
+.card-bottom{
+    flex-grow: 1;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+/* 반려생활 길잡이 */
+.box{
+    width: 100%;
+    border: 1px solid lightgrey;
+    box-sizing: border-box;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.bluebar{
+    display: flex;
+    height: 50px;
+    margin-bottom: 25px;
+}
+
+.bluenumber{
+    color: white;
+    font-size: 23px;
+    background-color: cornflowerblue;
+    height: 100%;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skyblue{
+    padding: 14px;
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    background-color: rgb(212, 238, 248);    
+}
+
+.bluetext{
+    color: cornflowerblue;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+
+.subexpla{
+    margin-left: 25px;
+    margin-bottom: 25px;
+    font-size: 16px;
+    margin-right: 25px;
+}
+
+.orange{
+    color: darkorange;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+
+
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+
+.동물보호센터소개 > p{
+    color: rgb(197, 15, 15);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+table{
+    width: 95%;
+    border: 1px solid lightgrey;
+    border-top: 2px solid black;
+    border-collapse: collapse;
+    margin-left: 25px;
+    margin-bottom: 30px;
+    
+}
+
+.thead{
+    background-color: rgb(248, 212, 218);
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid white;
+}
+
+td{
+    border: 1px solid lightgrey;
+    padding: 10px 20px;
+}
+
+.single-faq{
+    position: relative;
     padding: 20px;
+    width: 100%;
+    font-size: 20px;
+    cursor: pointer;
 }
 
-.select{
-    width: 100px;
-    height: 30px;
-    font-size: 15px;
+.single-faq>.long-dropdown{
+    display: none;
+    background-color: rgb(237, 237, 237);
+    z-index: 1;
+    position: absolute;
+    width: 96%;
+    left: 0;
+    top: 100%;
+    padding: 20px;
+    color: black;
+    font-size: 18px;
+    line-height: 40px;
 }
 
+.single-faq:hover{
+    color: white;
+    background-color: #0f8563;
+}
 
+a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}

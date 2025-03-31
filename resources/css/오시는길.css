@@ -1,7 +1,3 @@
-.동물보호센터소개{
-    width: 1800px;
-}
-
 .층 > div:nth-child(1){
     border-top: 1px dotted rgb(119, 116, 116);
     font-weight: bold;

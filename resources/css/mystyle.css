@@ -4,7 +4,7 @@
 }
 
 .container {
-    width: 1200px;
+    width: 1300px;
     margin: auto;
 }
 
@@ -134,4 +134,14 @@
 .address > p:nth-child(3){
     font-weight: lighter;
     color: rgb(186, 186, 183)
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.q{
+    width: 23px;
 }
